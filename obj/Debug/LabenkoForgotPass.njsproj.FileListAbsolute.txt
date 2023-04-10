@@ -1,0 +1,9 @@
+C:\Users\anila\source\repos\LabenkoForgotPass\obj\Debug\LabenkoForgotPass.njsprojAssemblyReference.cache
+C:\Users\anila\source\repos\LabenkoForgotPass\obj\Debug\LabenkoForgotPass.njsproj.CoreCompileInputs.cache
+C:\Users\anila\source\repos\LabenkoForgotPass\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Users\anila\source\repos\TEST\LabenkoForgotPass2\obj\Debug\LabenkoForgotPass.njsprojAssemblyReference.cache
+C:\Users\anila\source\repos\TEST\LabenkoForgotPass2\obj\Debug\LabenkoForgotPass.njsproj.CoreCompileInputs.cache
+C:\Users\anila\source\repos\TEST\LabenkoForgotPass2\bin\Microsoft.NodejsTools.WebRole.dll
+D:\Users\anila\Desktop\LabenkoForgotPass2\obj\Debug\LabenkoForgotPass.njsproj.AssemblyReference.cache
+D:\Users\anila\Desktop\LabenkoForgotPass2\obj\Debug\LabenkoForgotPass.njsproj.CoreCompileInputs.cache
+D:\Users\anila\Desktop\LabenkoForgotPass2\bin\Microsoft.NodejsTools.WebRole.dll

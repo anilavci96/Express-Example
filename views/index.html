@@ -1,0 +1,103 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Labenko Pass Reset</title>
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="container-fluid">
+            <br /><br />
+            <div id="forgotForm">
+                <div class="row">
+                    <div class="col-sm-2 col-md-4 col-lg-4"></div>
+                    <div class="col-12 col-sm-8 col-md-4 col-lg-4">
+                        <label>TC Kimlik Numarası</label>
+                        <input type="text" class="form-control" id="inputTCKN" placeholder="TC Kimlik Numarası Giriniz" required>
+                        <p id="errInputTCKN" style="font-weight: bold;color: red;"></p>
+                        <label>Email Adresi</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="E-mail Adresi Giriniz" required>
+                        <p id="errInputEmail" style="font-weight: bold;color: red;"></p>
+                        <br />
+                        <div id="captcha"></div>
+                        <input type="text" class="form-control" placeholder="Captcha" id="captchaTextBox" />
+                        <p id="errCaptcha" style="font-weight: bold;color: red;"></p>
+
+                        <button type="submit" class="btn btn-secondary btn-lg btn-block" style="float:right;" id="forgotButton">Gönder</button>
+                    </div>
+                    <div class="col-sm-2 col-md-4 col-lg-4"></div>
+                </div>
+            </div>
+
+            <div id="confirmForm">
+                <div class="row">
+                    <div class="col-sm-2 col-md-4 col-lg-4"></div>
+                    <div class="col-12 col-sm-8 col-md-4 col-lg-4">
+                        <label>Email adresinize gelen onay kodunu girin</label>
+                        <input type="text" class="form-control" id="confirm-code" placeholder="Onay Kodu Giriniz" required>
+
+                        <br />
+                        <button type="submit" class="btn btn-secondary btn-lg btn-block" style="float:right;" id="confirmButton">Onay</button><br/>
+                        <div id="app"></div>
+                    </div>
+                    <div class="col-sm-2 col-md-4 col-lg-4"></div>
+                </div>
+            </div>
+
+            <div id="confirmFormErr">
+                <div class="row">
+                    <div class="col-sm-2 col-md-4 col-lg-4"></div>
+                    <div class="col-12 col-sm-8 col-md-4 col-lg-4">
+                        <h3 style="font-weight: bold; color: red; width:100%; "> Onay Kodu Geçersiz</h3>
+                        <h6 style=" color: red; width:100%; "> Lütfen Tekrar Deneyiniz</h6>
+                        <button type="submit" class="btn btn-secondary btn-lg btn-block" style="width: 100%;" id="toFFButton">Geri Dön</button>
+                    </div>
+                    <div class="col-sm-2 col-md-4 col-lg-4"></div>
+                </div>
+            </div>
+
+            <div id="resetForm">
+                <div class="row">
+                    <div class="col-sm-2 col-md-4 col-lg-4"></div>
+                    <div class="col-12 col-sm-8 col-md-4 col-lg-4">
+
+                        <label>Yeni Şifre Giriniz</label>
+                        <input type="password" class="form-control" id="reset-pass" required>
+                        <p id="err_pass" style="font-weight: bold;color: red;"></p>
+                        <label>Tekrar Şifre Giriniz</label>
+                        <input type="password" class="form-control" id="reset-pass-2" required>
+                        <p id="err_pass2" style="font-weight: bold;color: red;"></p>
+                        <input type="checkbox" class="form-check-input" onclick="showPassword()">Parolayı Göster
+                        <br />
+
+                        <button type="submit" class="btn btn-secondary btn-lg btn-block" style="float:right;" id="resetButton">Şifreyi Değiştir</button>
+                    </div>
+                    <div class="col-sm-2 col-md-4 col-lg-4"></div>
+                </div>
+            </div>
+
+            <div id="successForm">
+                <div class="row">
+                    <div class="col-sm-2 col-md-4 col-lg-4"></div>
+                    <div class="col-12 col-sm-8 col-md-4 col-lg-4">
+                        <h3 id="success_msg" style="font-weight: bold; color: green; width: 100%;">Şifre Değiştirme Başarılı !</h3>
+                        <button type="submit" class="btn btn-secondary btn-lg btn-block" style="width:100%;" id="successButton">Ana Sayfaya Dön</button>
+                    </div>
+                    <div class="col-sm-2 col-md-4 col-lg-4"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/javascripts/functions.js" charset="utf-8" type="text/javascript"></script>
+    <script src="/javascripts/main.js" charset="utf-8" type="text/javascript"></script>
+
+</body>
+</html>
